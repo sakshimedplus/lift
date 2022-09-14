@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<head>
+    <style>
+ #nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  border: 1px solid #000000;
+  background-color: #070707;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(17, 46, 141);
+  font-size: 28;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 24, 24);
+}
+
+li a.active {
+  color: white;
+  background-color: rgb(242, 2, 50);
+}
+.container 
+{
+    display: flex;
+    justify-content: space-evenly ;
+    flex-flow: column wrap;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.item {
+    flex-shrink: 3; /* default 1 */   
+}
+ #cover {
+          background-image: url('cover.jpg');
+        }
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+#footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
+}
+.ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+        </style>
+        <script type="text/javascript">
+            window.onload = function () {
+            
+            var chart = new CanvasJS.Chart("chartContainer", {
+                theme:  "light2",// "dark1", "dark2"
+                animationEnabled: true, // change to true		
+                title:{
+                    text: "Basic Column Chart"
+                },
+                data: [
+                {
+                    // Change type to "bar", "area", "spline", "pie",etc.
+                    type: "column",
+                    dataPoints: [
+                        { label: "python",  y: 50 },
+                        { label: "php", y: 70 },
+                        { label: "java", y: 90 },
+                        { label: "javascript",  y: 40  },
+                        { label: "css",  y: 60 },
+                        { label: "html",  y: 70 },
+                          { label: "github",  y: 70 }
+                    ]
+                }
+                ]
+            });
+            chart.render();
+            
+            }
+            </script>
+</head>
+<body>
+  <div id="cover"></br></br>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#personal">personal</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <div id ="home" class="flex-container">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </br></br></br>
+    <h2>Sakshi Dubey</h2></br></br>
+    <h3>Associate Software Engineer</h3>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</div>
+<section id="skills">
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+</section>
+<h3>Contact Form</h3>
+
+<section id="contactForm">
+    <div class="container">
+      <form action="/action_page.php">
+        <div>
+   <div class="items">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+</div>
+<div class="items">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your last name..">
+</div></div>
+<div>
+<div class="items">
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+</div>
+<div class="items">
+    <input type="submit" value="Submit">
+</div>
+  </form>
+</div>
+</section>
+<div id="footer">
+   <!-- Footer social -->
+      <section class="ft-social">
+        <ul class="ft-social-list">
+     
+    <li><a href="">
+        <img alt="insta" src="instagram.png"
+        width=50" height="50">
+     </a></li>
+     <li>
+     <a href="">
+        <img alt="face" src="facebook.png"
+        width=50" height="50">
+     </a>
+    </li>
+    <li>
+     <a href="">
+        <img alt="git" src="github.png"
+        width=50" height="50">
+     </a></li>
+     <li><a href="">
+        <img alt="linkedin" src="linkedin.png"
+        width=50" height="50">
+     </a></li>
+    </ul>
+</section>
+</div>
+</div>
+</body>
+</html>

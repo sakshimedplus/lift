@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    #A {
+        border: none;
+        background-color: red;
+        color:white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      #B {
+        
+        border: none;
+        background-color: yellow;
+        color:white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      #C {
+        
+        border: none;
+        background-color: green;
+        color:white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
+    <title>sakshi</title>
+</head>
+<body> 
+    <button type="button" id="A">A</button> <br><br> 
+    <button type="button" id="B">B</button> <br><br> 
+    <button type="button" id="C">C</button> <br><br>
+    <script>
+    const btn = document.getElementById("A")
+    const btn1 = document.getElementById("B")
+    const btn2 = document.getElementById("C")
+    btn.addEventListener('click',function onchange(){
+        if(btn.style.backgroundColor == 'red'){
+        btn.style.backgroundColor = 'yellow'
+        btn1.style.backgroundColor = 'green'
+        btn2.style.backgroundColor = 'red'
+        }
+        else{
+            btn1.style.backgroundColor = 'yellow'
+        btn2.style.backgroundColor = 'green'
+        btn.style.backgroundColor = 'red'
+        }
+    })
+    btn1.addEventListener('click',function onchange(){
+        btn1.style.backgroundColor = 'yellow'
+        btn2.style.backgroundColor = 'green'
+        btn.style.backgroundColor = 'red'
+    })
+    btn2.addEventListener('click',function onchange(){
+        btn2.style.backgroundColor = 'yellow'
+        btn.style.backgroundColor = 'green'
+        btn1.style.backgroundColor = 'red'
+    })
+</script>
+</body>
+</html>

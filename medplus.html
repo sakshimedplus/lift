@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <topic>Assignment</topic>
+    </head>
+    <style>
+    phone {
+        font-style: italic;
+      }
+    name {
+        font-style: italic;
+      }
+    address {
+        display: block;
+        font-style: italic;
+      }
+      </style>
+    <script>
+        function myFun()
+        {
+    
+        }
+        function reset()
+        {
+            document.getElementById("myForm").reset();
+        }  
+     </script>
+<body>
+
+<h3>Medplus form</h3><br><br><br><br>
+<form id="myForm" action="/action_page.js"></form>
+<tag>Name</tag><br>
+    <input id="name">
+    <br><br>
+    <tag>Phone no</tag><br>
+<input type="tel" id="phone">
+<br><br>
+<tag>Address</tag><br>
+<input type="text" id="address">
+<br><br>
+<button type="submit" onclick="myFun()">Submit</button>
+<button type="button" onclick="reset()" >Reset</button>
+
+</body>
+</html>
